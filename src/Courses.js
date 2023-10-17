@@ -5,7 +5,7 @@ function Courses() {
     const [coursesResponse, setCoursesResponse] = useState(null);
 
     async function fetchCourses() {
-        const response = await Axios.get('http://35.227.229.71/api/v1/courses');
+        const response = await Axios.get('http://34.149.138.131/api/v1/courses');
         setCoursesResponse(response.data);
     }
 

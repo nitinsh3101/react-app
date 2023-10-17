@@ -5,7 +5,7 @@ function Students() {
     const [studentsResponse, setStudentsResponse] = useState(null);
 
     async function fetchStudents() {
-        const response = await Axios.get('http://35.227.229.71/api/v1/students');
+        const response = await Axios.get('http://34.149.138.131/api/v1/students');
         setStudentsResponse(response.data);
     }
     useEffect(() => {
