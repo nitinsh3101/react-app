@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Axios from 'axios';
+import axios from 'axios';
 
 function Courses() {
     const [coursesResponse, setCoursesResponse] = useState(null);
 
     async function fetchCourses() {
-        const response = await Axios.get('http://34.149.138.131/api/v1/courses');
+        const response = await axios.get('http://34.149.138.131/api/v1/courses');
         setCoursesResponse(response.data);
     }
 
